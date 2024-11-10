@@ -1,9 +1,10 @@
+<router-outlet></router-outlet>
 <div class="admin-container">
     <p>admin works!</p>
     <button (click)="changeCat(1)">Category</button>
     <div *ngIf="WhatToShow==1">
         <app-category></app-category>
     </div>
-    <button (click)="logout()">logout</button>
+    <button routerLink="">logout</button>
 </div>
 

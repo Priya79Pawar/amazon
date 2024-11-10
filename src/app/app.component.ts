@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Amazon';
 
-  baseUrl="http://localhost:8080/"
+  // https://13.60.193.209:8080/ama/login/hello
+  baseUrl="http://13.60.193.209:8080/ama/"
   id:number=0;
   whatTOShow:number=0;
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,13 @@ import { AppComponent } from '../app.component';
 })
 export class LoginComponent {
 
-  constructor(public http:HttpClient,public app:AppComponent){}
+  register(){
+   
+    this.app.whatTOShow = 4;
+  
+  
+      }
+  constructor(public http:HttpClient,public app:AppComponent,public router:Router){}
   
   username:string='';
   password:string='';
@@ -29,10 +36,26 @@ export class LoginComponent {
         }else{
         this.app.id=response.id;
         this.app.whatTOShow=response.accountType;
+
+        if(response.accountType==1)
+        {
+          this.router.navigate(['/admin']);
+        }
+        if(response.accountType==2)
+          {
+            this.router.navigate(['/seller']);
+          }
+          if(response.accountType==3)
+            {
+              this.router.navigate(['/buyer']);
+            }
       }
       }
 
     })
+
+    
     
   }
+ 
 }

@@ -1,0 +1,48 @@
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background-color: white;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 15%;
+    background-color: #f8f8f8;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product p {
+    font-size: 14px;
+    margin-top: 10px;
+}

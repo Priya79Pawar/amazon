@@ -1,8 +1,9 @@
+<router-outlet></router-outlet>
 <div class="seller-container">
     <p>seller works!</p>
     <button (click)="changeCat()">Product</button>
     <div *ngIf="WhatToShow==1">
         <app-product></app-product>
     </div>
-    <button (click)="logout()">logout</button>
+    <button routerLink="">logout</button>
 </div>

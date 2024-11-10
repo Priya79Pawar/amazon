@@ -1,8 +1,13 @@
-<div *ngIf="whatTOShow==0" class="full-height">
+<!-- <div *ngIf="whatTOShow==0" class="full-height">
   <app-login></app-login>
-</div>
+</div> -->
+<router-outlet></router-outlet>
 
-<div *ngIf="whatTOShow==1">
+<!-- <div *ngIf="whatTOShow==0" class="full-height">
+    <app-home></app-home>
+  </div> -->
+
+<!-- <div *ngIf="whatTOShow==1">
     <app-admin></app-admin>
 </div>
 
@@ -12,4 +17,9 @@
 
 <div *ngIf="whatTOShow==3">
     <app-buyer></app-buyer>
+</div> -->
+
+<div *ngIf="whatTOShow==4">
+    <app-registration></app-registration>
 </div>
+

@@ -1,0 +1,174 @@
+<!-- <div class="allnav">
+    <img class="backimg" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+  
+    <nav>
+      <a routerLink="/login" class="login">Login</a>
+      <a routerLink="/admin" class="admin">Admin</a>
+      <a routerLink="/seller" class="seller">Seller</a>
+    </nav>
+  </div>
+
+
+
+<div class="scroll-container">
+
+    <div class="scroll-images">
+        <img src="https://www.shutterstock.com/image-photo/young-excited-happy-couple-two-600nw-2167304925.jpg" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSslUBO1vneyVPUuCabyyAiHBdt14ZZmgHtg&s" alt="Image 2">
+        <img src="https://t4.ftcdn.net/jpg/05/91/84/29/360_F_591842937_ptXTrDjkCdG21JhOmaEzyZ7ZJyAhVuQP.jpg" alt="Image 3">
+        
+    </div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="navcol">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li ><a  class="navi" routerLink="/registration">Registration</a></li>
+                <li ><a class="navi" routerLink="/login" target="_blank">Login</a></li>
+                <!-- <li ><a class="navi" routerLink="/admin">Admin</a></li>
+                <li ><a class="navi" routerLink="/seller">Seller</a></li>
+                <li ><a class="navi" routerLink="/buyer">Buyer</a></li> -->
+                
+                <li><a class="navi" routerLink="/cart">Cart</a></li>
+                <li><a class="navi" routerLink="/returnOrder">Return Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="scroll-container">
+
+        <div class="scroll-images">
+            <img src="https://www.shutterstock.com/image-photo/young-excited-happy-couple-two-600nw-2167304925.jpg"
+                alt="Image 1">
+
+            <img src="https://t4.ftcdn.net/jpg/05/91/84/29/360_F_591842937_ptXTrDjkCdG21JhOmaEzyZ7ZJyAhVuQP.jpg"
+                alt="Image 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSslUBO1vneyVPUuCabyyAiHBdt14ZZmgHtg&s"
+                alt="Image 2">
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+        <img src="https://www.shutterstock.com/image-photo/young-excited-happy-couple-two-600nw-2167304925.jpg" alt="Hero Image">
+    </section> -->
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>HURRY UP....SPECIAL OFFER</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/98/e4/a6/98e4a63f632e19135285933a2f7f0087.jpg"  alt="Product 1">
+                <p>Price:5000</p>
+                <p>Colours Are Avilable</p>
+
+                <button  class="seemore" routerLink="/firstProduct">See More</button>
+            </div>
+
+          
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71D9ImsvEtL._AC_SL1500_.jpg" alt="Product 2">
+                <p>Price:800</p>
+                <p>A shoe is an item of footwear intended to protect and comfort the human foot.</p>
+
+                <button class="seemore" routerLink="/secondProduct">See More</button>
+            </div>
+
+
+            <div class="product">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/339012359/NZ/CI/HL/22035967/ikall-s2-smartphone-6-8-inch-hd-display-6gb-ram-6gb-virtual-ram-128gb-storage-android-13-0-500x500.jpg"
+                    alt="Echo Dot">
+                <p>Price:50000</p>
+                <p> portable device for connecting to a telecommunications network in order to transmit and receive
+                    voice, video, or other data. </p>
+
+                    <button  class="seemore" routerLink="/thirdProduct">See More</button>
+            </div>
+
+
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/jean/4/p/4/32-17-j-rack-original-imagr6y5buy3exaw.jpeg?q=90&crop=false" alt="Product 1">
+                <p>Price:1000</p>
+                <p>Colours Are Avilable</p>
+
+                <button  class="seemore" routerLink="/thirdProduct">See More</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images-cdn.ubuy.co.in/635206ddd0710a3c225fc85c-3d-wallpaper-for-room-3d-stone-wall.jpg" alt="Product 1">
+                <p>Price:3000</p>
+                <p>Vary comfortable</p>
+                <button  class="seemore" routerLink="/thirdProduct">See More</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2022/10/image-193.webp" alt="Product 1">
+                <p>Price:20000</p>
+                <p>Vary comfortable</p>
+                <button  class="seemore" routerLink="/thirdProduct">See More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Cares</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Amazon Clone - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

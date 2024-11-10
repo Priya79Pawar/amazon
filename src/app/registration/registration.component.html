@@ -1,0 +1,25 @@
+<!-- <p>registration works!</p> -->
+
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome
+    To Registration form</h2>
+<div class="register-container">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name"><br><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username"><br><br>
+    <label for="password">Create password:</label>
+    <input type="password" id="password" [(ngModel)]="password"><br><br>
+    Account type:<select [(ngModel)]="accountType">
+        <option [value]="2">seller</option>
+        <option [value]="3">buyer</option>
+    </select><br>
+
+
+    <button (click)="registers()">Register</button><br>
+
+    <p>&nbsp;&nbsp;&nbsp;Already have an account? &nbsp;&nbsp;<a routerLink="/login">Sign in</a></p>
+
+    <br>
+    <button routerLink="">Log out</button>
+</div>
